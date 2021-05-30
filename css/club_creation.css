@@ -1,0 +1,88 @@
+input#counter2 {
+    padding: 10px;
+    background: none;
+    border: 0px;
+    font-size: 12;
+    margin-top: 4px;
+    position: absolute;
+    margin-left: -60px;
+}
+
+.lefconc {
+    max-width: 500px;
+}
+
+.content_main {
+    padding: 20px;
+}
+
+#motto,
+#clubname,#bio,#username,#address {
+    width: 419px;
+}
+
+
+.leftconc_loader {
+    /*background: #FF4136;*/
+    background-color: #fb6249;
+    position: absolute;
+    display: none;
+    z-index: 99;
+    margin: -40px;
+    border-radius: 5px;
+    padding: 30px 40px;
+    animation: slide 700ms;
+    margin-top: -41px;
+    width: 200px;
+    text-align: center;
+}
+
+@keyframes slide {
+    from {
+        width: 0px;
+    }
+}
+
+/*loader from web loading.io/css */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-top: 50px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dubinu</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/inbox.css">
+<link rel="stylesheet" type="text/css" href="css/tabs.css">
+<link rel="stylesheet" type="text/css" href="css/postbox.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='js/jquery-3.1.1.js'></script>
+</head>
+
+<body>
+    <div class="left_container">
+        <div class="left__tab">
+            <ul class="tabheading">
+                <li id='th_1' rel="tab1">
+                    <div id='n'>Timeline</div>
+                </li>
+                <li id='not' rel="tab2">
+                    <div id='n'>Projects</div>
+                </li>
+                <li id="pro_w" rel="tab3"  class="active">
+                    <div id='n'>Uploaded files</div>
+                </li>
+                <li id="pro_w" rel="tab4">
+                    <div id='n'>Settings</div>
+                </li>
+            </ul>
+            <style>
+            </style>
+        </div>
+        <div class="left_main">
+            <div class="left_invisible">
+                <div class="tabbody" id="tab1" style="display: none;">
+                    <div class="left__announcement box">
+                        <div class="announcement__title bold">Announcement</div>
+                        <div class="announcement__content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in...</div>
+                    </div>
+                    <br>
+                    <div class="left__postbox left_align" style="padding-left: 0px; ">
+                        <div class="postbox__cap inline" style="padding-left: 25px;">Hi <div class="postbox_cap_user bold"> Siddhartha</div> post something.</div>
+                        <div class="postbox_parent box">
+                  <div class="postbox_content inline"> 
+  <script type="text/javascript">
+                    	// $(document).ready(function (e) {
+                    		$(".postbox_content").load("post_text.html");
+                    	// });
+</script>
+
+                  </div><br>
+                            <div class="postbox_activity_display_buttons shown">
+                                <button class="postbox_btn add_project_btn ">Add a new project</button>
+                                <button class="postbox_btn add_announcement_btn">Add announcement</button>
+                                <button class="postbox_btn more_btn">More</button>
+                            </div>
+                            
+                            <div class="postbox_activity_buttons hidden">
+                                <!-- <button class="postbox_btn ">Write a note</button> -->
+                                <button class="postbox_btn add_project_btn ">Add a new project</button>
+                                <button class="postbox_btn add_announcement_btn">Add announcement</button>
+                                <button class="postbox_btn ">Add a member</button>
+                                <button class="postbox_btn ">Post a photo</button>
+                                <button class="postbox_btn ">Share a link</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+
+
+                    	$(".add_project_btn").on("click", function(){
+                    		$(".postbox_content_textarea").trigger("click");
+                        $(".content_activity_box").load('new_project.html');
+
+                    	});
+
+                    	$(".add_announcement_btn").on("click", function(){
+                    		$(".postbox_content_textarea").trigger("click");
+                        $(".content_activity_box").load('new_announcement.html');
+
+                    	});
+                 
+                    $(".more_btn").on("click", function(){
+                    	$(".postbox_content_textarea").trigger("click");
+                    });
+
+                    // $(".cancel").on("click", function() {
+                    //   	$(".postbox_content").load("post_text.html");
+                    // 	// $(".content_activity_box").html("");
+                    // 	// $(".active_textarea").val('');
+                    //  //    $(".active_textarea").addClass('postbox_content_textarea');
+                    //  //    $(".postbox_content_textarea").removeClass('active_textarea');
+                    //  //    $(".postbox_activity_display_buttons").addClass('shown');
+                    //  //    $(".postbox_activity_display_buttons").removeClass('hidden');
+                    //  //    $(".post_btn").addClass('hidden');
+                    //  //    $(".postbox_activity_buttons").addClass('hidden');
+                    //  //    $(".postbox_parent").removeClass('postbox_shadow');
+                    //  //    $("hr").toggle();
+                    //  //    $(".postbox_content_slide").removeClass('hidden');
+                    // });
+                    </script>
+                    <div class="left__activityfeed">
+                        <div class="activityfeed_item">
+                            Siddhartha left the group
+                        </div>
+                    </div>
+                </div>
+                <div class="tabbody" id="tab2" style="display: none;">
+                    <div class="projects_current box">
+                        <div class="current_project_cap bold">Current project</div>
+                        <div class="current_project_details">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in...</div>
+                        <button class="current_project_seeful">See full activity</button>
+                    </div>
+                    <div class="new_project_box box">
+                        <button class="add_project">Add a new project</button>
+                    </div>
+                    <div class="recent_updates left_align" style="padding-left: 25px;">
+                        <p class="bold">Recent updates</p>
+                    </div>
+                    <div class="project_activity">
+                        <div class="project_activity_item box">
+                            <div class="project_post_head inline">
+                                <div class="project_post_username bold">Siddhartha Neupane</div> marked project <div class="project_completed_name bold">The forest</div> as <div class="bold">completed</div>.
+                            </div>
+                            <div class="project_post_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabbody" id="tab3" style="display: block;">
+                	<div class="uploaded_files_tab">
+                	<script type="text/javascript">
+                    	// $(document).ready(function (e) {
+                    		$(".uploaded_files_tab").load("uploads.html");
+                    	// });
+</script>	
+                	</div>
+                      
+                </div>
+                <div class="tabbody" id="tab4" style="display: none; ">
+                    tab 4
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/tabs.js'></script>
+    <div class="right_container">
+        <div class="right__inbox box">
+            <div class="inbox__title">
+                Inbox
+            </div>
+        </div>
+        <div class="right_discussions box">
+            <div class="discussions_title bold">
+                Currently talking about
+            </div>
+            <div class="discussions_body">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in...
+            </div>
+            <div class="discussions_bottom">
+                <div class="discussions_update">
+                    <button class="discussions_update_btn bold" style="margin-left: -10px;">Update discussion</button>
+                </div>
+                <div class="discussions_members bold right_align">
+                    12 members
+                </div>
+            </div>
+        </div>
+        <div class="chat_right">
+            <div class="invisible_main">
+                <div class="chat_parent">
+                    <div class="chat_item">
+                        <div class="chat_user">Siddhartha Neupane</div>
+                        <div class="chat_content">
+                            <div class="chat_text_content">This is me typinh</div>
+                        </div>
+                    </div>
+                    <div class="chat_item class">
+                        <div class="chat_activity">
+                            <div class="chat_activity_item">
+                                <div class="chat_activity_item_text">
+                                    <div class="chat_activity_user"> Siddhartha </div>uploaded a photo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat_messagebox">
+                    <div class="chat_textarea">
+                        <textarea class="chat_textarea_textarea" placeholder="Write something"></textarea>
+                    </div>
+                    <div class="chat_buttons">
+                        <div class="chat_buttons_Send">
+                            <button class="chat_button_send_btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- remaining
+1. login
+2. signup
+3. tours
+4. welcome
+5. create connections
+6. search and join connections
+7. user profile
+8. functionality of everything
+9. live server -->

@@ -1,0 +1,58 @@
+            .tabheading li:hover {
+                background: rgba(224, 226, 226, 0.16);
+                -moz-transition: background 400ms;
+                /* Firefox 4 */
+                -o-transition: background 400ms;
+                /* Opera     */
+                -webkit-transition: background 400ms;
+                /* Chrome    */
+                transition: background 400ms;
+
+            }
+
+            button {
+                padding: 10px;
+                position: relative;
+            }
+
+            .tabheading li.active:after {
+                width: 100%;
+
+            }
+
+            .tabheading li:after {
+                content: '';
+                height: 4px;
+                width: 0%;
+                z-index: 999;
+                background-color: #464646;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width 900ms;
+            }
+
+            .tabheading li {
+                align-content: center;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                display: inline-flex;
+                padding: 20px 44px;
+                margin: 0px;
+
+            }
+
+
+
+            ul.tabheading {
+                font-size: 16px;
+                background: #ffffff;
+                margin-top: 0px;
+                text-align: -webkit-center;
+                padding-left: 0px;
+                margin-bottom: 0px;
+                z-index: 0;
+                color: #4c4c4c;
+
+            }
